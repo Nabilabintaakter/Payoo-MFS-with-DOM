@@ -21,10 +21,12 @@ document.getElementById('button-withdraw-money').addEventListener('click', funct
 
         // add to transaction history
         const div = document.createElement('div');
-        div.classList.add('bg-red-300 rounded-lg')
         div.innerHTML = `
-        <h1 class = "text-red-700 text-lg font-medium"> ${withdrawMoney} Tk. withdraw. New Balance is ${newBalance}</h1>
-        `
+        <div class = "bg-red-200 rounded-lg p-3 mt-2 flex justify-center items-center  hover:border-red-700 hover:border-2">
+            <h1 class= "text-red-700 text-base font-medium">Withdraw ${withdrawMoney} Tk. New Balance is: ${newBalance} Tk.</h1>
+        </div>
+        `;
+
         document.getElementById('transaction-history').appendChild(div);
     }
     else{

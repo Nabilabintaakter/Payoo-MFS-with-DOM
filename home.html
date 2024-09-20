@@ -16,12 +16,12 @@
             <div class="display w-[420px] h-[900px]">
                 <div class=" artboard-demo phone-4 bg-white w-full h-full">
                     <!-- account balance -->
-                    <div class="flex gap-12 items-center px-4">
+                    <div class="flex gap-12 items-center px-4 mt-8">
                         <div class="flex items-center">
                             <img src="./images/Group (1).png" alt="">
                             <div class="">
                                 <div class="stat">
-                                    <div id="current-balance" class="stat-value">9400</div>
+                                    <div id="current-balance" class="stat-value">0.00</div>
                                     <div class="stat-title">Available Balance</div>
                                 </div>
                             </div>
@@ -42,32 +42,32 @@
                     <div class="divider"></div>
                     <!-- show action button -->
                     <div class="grid grid-cols-3 gap-3 px-4 mb-6">
-                        <div
+                        <div id="show-add-money-btn"
                             class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/wallet 1.png" alt=""></div>
                             <h3>Add Money</h3>
                         </div>
-                        <div
+                        <div id="show-cash-out-btn"
                             class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/send 1.png" alt=""></div>
                             <h3>Cash Out</h3>
                         </div>
-                        <div
+                        <div id="show-transfer-money-btn"
                             class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/money 1.png" alt=""></div>
                             <h3>Transfer Money</h3>
                         </div>
-                        <div
+                        <div id="show-get-bonus-btn"
                             class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/financial 1.png" alt=""></div>
                             <h3>Get Bonus</h3>
                         </div>
-                        <div
+                        <div id="show-pay-bill-btn"
                             class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/purse 1.png" alt=""></div>
                             <h3>Pay Bill</h3>
                         </div>
-                        <div
+                        <div id="show-transaction-btn"
                             class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/transaction 1.png" alt=""></div>
                             <h3>Transactions</h3>
@@ -75,7 +75,7 @@
 
                     </div>
                     <!-- add money form start -->
-                    <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <h1 class="text-xl font-bold ml-5 mt-5">Add Money</h1>
                         <form class="card-body">
                             <div class="form-control">
@@ -100,7 +100,7 @@
                     </div>
                     <!-- add money form end -->
                     <!-- cash out form start -->
-                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <h1 class="text-xl font-bold ml-5 mt-5">Cash Out</h1>
                         <form class="card-body">
                             <div class="form-control">
@@ -125,18 +125,18 @@
                     </div>
                     <!-- cash out form end -->
                     <!-- transaction section start -->
-                    <div class="hidden">
-                        <h1 id="transaction-history" class="text-4xl font-bold">Transaction History</h1>
+                    <div id="transaction-form" class="hidden overflow-y-scroll my-8">
+                        <h1 id="transaction-history" class="text-4xl font-bold text-center ">Transaction History</h1>
                     </div>
                     <!-- transaction section end -->
                 </div>
             </div>
         </div>
     </main>
-    <script src="./js/home.js"></script>
     <script src="./js/utilities.js"></script>
     <script src="./js/addmoney.js"></script>
     <script src="./js/withdrawmoney.js"></script>
+    <script src="./js/features.js"></script>
 </body>
 
 </html>
