@@ -21,13 +21,13 @@
                             <img src="./images/Group (1).png" alt="">
                             <div class="">
                                 <div class="stat">
-                                    <div class="stat-value">9,400</div>
+                                    <div id="current-balance" class="stat-value">9400</div>
                                     <div class="stat-title">Available Balance</div>
                                 </div>
                             </div>
                         </div>
                         <div class="">
-                            <button class="btn border bg-white">
+                            <button id="logout-btn" class="btn border bg-white">
                                 <img src="./images/Frame.png" alt="">
                                 <p>Log Out</p>
                             </button>
@@ -74,20 +74,20 @@
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text font-bold">Amount to Add</span>
+                                    <span id="" class="label-text font-bold">Amount to Add</span>
                                 </label>
-                                <input id="phone-number" type="text" placeholder="Enter amount to add"
+                                <input id="input-add-money" type="text" placeholder="Enter amount to add"
                                     class="input bg-[#F4F5F7] rounded-full" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text font-bold">Pin Number</span>
+                                    <span id="" class="label-text font-bold">Pin Number</span>
                                 </label>
-                                <input id="pin-number" type="password" placeholder="Enter 4 Digit Pin"
+                                <input id="input-add-money-pin" type="password" placeholder="Enter 4 Digit Pin"
                                     class="input bg-[#F4F5F7] rounded-full" autocomplete="off" required />
                             </div>
                             <div class="form-control mt-6">
-                                <button id="button-login"
+                                <button id="button-add-money"
                                     class="btn rounded-full bg-[#0874F2] text-white font-bold">Add Money</button>
                             </div>
                         </form>
@@ -98,6 +98,8 @@
         </div>
     </main>
     <script src="./js/home.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/addmoney.js"></script>
 </body>
 
 </html>
