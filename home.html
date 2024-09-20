@@ -42,27 +42,33 @@
                     <div class="divider"></div>
                     <!-- show action button -->
                     <div class="grid grid-cols-3 gap-3 px-4 mb-6">
-                        <div class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
+                        <div
+                            class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/wallet 1.png" alt=""></div>
                             <h3>Add Money</h3>
                         </div>
-                        <div class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
+                        <div
+                            class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/send 1.png" alt=""></div>
                             <h3>Cash Out</h3>
                         </div>
-                        <div class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 cursor-pointer hover:bg-slate-200">
+                        <div
+                            class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/money 1.png" alt=""></div>
                             <h3>Transfer Money</h3>
                         </div>
-                        <div class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
+                        <div
+                            class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/financial 1.png" alt=""></div>
                             <h3>Get Bonus</h3>
                         </div>
-                        <div class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
+                        <div
+                            class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/purse 1.png" alt=""></div>
                             <h3>Pay Bill</h3>
                         </div>
-                        <div class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
+                        <div
+                            class="bg-white rounded-lg border flex flex-col justify-center items-center gap-2 py-2 px-4 cursor-pointer hover:bg-slate-200">
                             <div><img class="w-fit" src="./images/transaction 1.png" alt=""></div>
                             <h3>Transactions</h3>
                         </div>
@@ -93,6 +99,36 @@
                         </form>
                     </div>
                     <!-- add money form end -->
+                    <!-- cash out form start -->
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <h1 class="text-xl font-bold ml-5 mt-5">Cash Out</h1>
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span id="" class="label-text font-bold">Amount</span>
+                                </label>
+                                <input id="input-cash-out" type="text" placeholder="Enter amount to withdraw"
+                                    class="input bg-[#F4F5F7] rounded-full" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span id="" class="label-text font-bold">Pin Number</span>
+                                </label>
+                                <input id="input-cash-out-pin" type="password" placeholder="Enter 4 Digit Pin"
+                                    class="input bg-[#F4F5F7] rounded-full" autocomplete="off" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="button-withdraw-money"
+                                    class="btn rounded-full bg-[#0874F2] text-white font-bold">Withdraw Money</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- cash out form end -->
+                    <!-- transaction section start -->
+                    <div class="hidden">
+                        <h1 id="transaction-history" class="text-4xl font-bold">Transaction History</h1>
+                    </div>
+                    <!-- transaction section end -->
                 </div>
             </div>
         </div>
@@ -100,6 +136,7 @@
     <script src="./js/home.js"></script>
     <script src="./js/utilities.js"></script>
     <script src="./js/addmoney.js"></script>
+    <script src="./js/withdrawmoney.js"></script>
 </body>
 
 </html>
