@@ -8,6 +8,12 @@ document.getElementById('button-withdraw-money').addEventListener('click', funct
     const withdrawMoney = getInputFieldValueById('input-cash-out');
     const pinNumber = getInputFieldValueById('input-cash-out-pin');
 
+    // input type validation
+    if(isNaN(withdrawMoney)){
+        alert('Invalid input');
+        return;
+    }
+
     // check if balance is insufficient
     if(withdrawMoney > currentBalance){
         alert('Insufficient balance!')

@@ -8,6 +8,12 @@ document.getElementById('button-add-money').addEventListener('click', function (
     const addMoney = getInputFieldValueById('input-add-money');
     const pinNumber = getInputFieldValueById('input-add-money-pin');
 
+    // input type validation
+    if(isNaN(addMoney)){
+        alert('Invalid input');
+        return;
+    }
+
     // validate the pin  (wrong way)
     if (pinNumber === 1234) {
         const newBalance = currentBalance + addMoney;

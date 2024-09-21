@@ -15,7 +15,7 @@ function showSectionById(id){
     // hide all the sections
     document.getElementById('add-money-form').classList.add('hidden');
     document.getElementById('cash-out-form').classList.add('hidden');
-    // document.getElementById('').classList.add('hidden');
+    document.getElementById('transfer-money-form').classList.add('hidden');
     // document.getElementById('').classList.add('hidden');
     // document.getElementById('').classList.add('hidden');
     document.getElementById('transaction-form').classList.add('hidden');
