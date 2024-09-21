@@ -24,6 +24,12 @@ document.getElementById('show-transfer-money-btn').addEventListener('click', fun
 }) 
 
 
+// show get bonus form
+document.getElementById('show-get-bonus-btn').addEventListener('click', function(){
+    showSectionById('get-bonus-form');
+}) 
+
+
 // show transaction history
 document.getElementById('show-transaction-btn').addEventListener('click', function(){
     showSectionById('transaction-form');
