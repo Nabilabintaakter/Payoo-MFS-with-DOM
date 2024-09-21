@@ -13,7 +13,7 @@
     <main class="flex justify-center">
         <div class="mockup-phone">
             <div class="camera"></div>
-            <div class="display w-[420px] h-[900px]">
+            <div class="display w-[420px] h-[1020px]">
                 <div class=" artboard-demo phone-4 bg-white w-full h-full">
                     <!-- account balance -->
                     <div class="flex gap-12 items-center px-4 mt-8">
@@ -75,7 +75,7 @@
 
                     </div>
                     <!-- add money form start -->
-                    <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <h1 class="text-xl font-bold ml-5 mt-5">Add Money</h1>
                         <form class="card-body">
                             <div class="form-control">
@@ -174,8 +174,53 @@
                         </form>
                     </div>
                     <!-- get bonus end -->
+                    <!-- pay bill start -->
+                    <div id="pay-bill-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <h1 class="text-xl font-bold ml-5 my-5">Pay Bill</h1>
+                        <form class="px-5 pb-5">
+                            <!-- <div class="form-control w-full">
+                                <label class="label">
+                                    <span class="label-text font-bold">Select Pay Bill</span>
+                                </label>
+                                <select id="select-bank" class="select w-[100%]  input bg-[#F4F5F7] rounded-full">
+                                    <option disabled selected>Select Bank</option>
+                                    <option>BRAC Bank</option>
+                                    <option>Dutch-Bangla Bank Limited (DBBL)</option>
+                                    <option>Grameen Bank</option>
+                                    <option>Islami Bank Bangladesh Limited</option>
+                                </select>
+                            </div> -->
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-bold">Biller Account Number</span>
+                                </label>
+                                <input id="input-biller-number" type="text" placeholder="Enter account number"
+                                    class="input bg-[#F4F5F7] rounded-full" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span id="" class="label-text font-bold">Amount to Pay</span>
+                                </label>
+                                <input id="input-pay" type="text" placeholder="Add amount to pay"
+                                    class="input bg-[#F4F5F7] rounded-full" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-bold">Pin Number</span>
+                                </label>
+                                <input id="input-pay-bill-pin" type="password" placeholder="Enter 4 Digit Pin"
+                                    class="input bg-[#F4F5F7] rounded-full" autocomplete="off" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="button-pay-now"
+                                    class="btn rounded-full bg-[#0874F2] text-white font-bold">Pay Now</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- pay bill end -->
                     <!-- transaction section start -->
-                    <div id="transaction-form" class="hidden overflow-y-scroll my-8 pl-4">
+                    <div id="transaction-form" class="hidden overflow-y-scroll my-8 px-4"
+                        style="-ms-overflow-style : none; scrollbar-width: none">
                         <h1 id="transaction-history" class="text-4xl font-bold text-center ">Transaction History</h1>
                     </div>
                     <!-- transaction section end -->
@@ -188,6 +233,7 @@
     <script src="./js/withdrawmoney.js"></script>
     <script src="./js/transferMoney.js"></script>
     <script src="./js/getBonus.js"></script>
+    <script src="./js/payBill.js"></script>
     <script src="./js/features.js"></script>
 </body>
 

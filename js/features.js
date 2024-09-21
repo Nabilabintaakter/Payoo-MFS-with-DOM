@@ -30,6 +30,12 @@ document.getElementById('show-get-bonus-btn').addEventListener('click', function
 }) 
 
 
+// show pay bill form
+document.getElementById('show-pay-bill-btn').addEventListener('click', function(){
+    showSectionById('pay-bill-form');
+}) 
+
+
 // show transaction history
 document.getElementById('show-transaction-btn').addEventListener('click', function(){
     showSectionById('transaction-form');

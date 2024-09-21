@@ -22,7 +22,7 @@ document.getElementById('button-add-money').addEventListener('click', function (
         // add to transaction history
         const div = document.createElement('div');
         div.innerHTML = `
-         <div class = "bg-green-200 rounded-lg p-3 mt-2 flex justify-center items-center  hover:border-green-700 hover:border-2">
+         <div class = "bg-green-200 rounded-lg p-3 mt-2 flex justify-center items-center  hover:border-green-700 hover:border-2" >
              <h1 class= "text-green-700 text-base font-medium">Cash in ${addMoney} Tk. New Balance is: ${newBalance} tk.</h1>
          </div>
          `;

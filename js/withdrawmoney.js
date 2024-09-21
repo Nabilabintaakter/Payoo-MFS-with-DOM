@@ -28,7 +28,7 @@ document.getElementById('button-withdraw-money').addEventListener('click', funct
         // add to transaction history
         const div = document.createElement('div');
         div.innerHTML = `
-        <div class = "bg-red-200 rounded-lg p-3 mt-2 flex justify-center items-center  hover:border-red-700 hover:border-2">
+        <div class = "bg-red-200 rounded-lg p-3 mt-2 flex justify-center items-center  hover:border-red-700 hover:border-2" >
             <h1 class= "text-red-700 text-base font-medium">Withdraw ${withdrawMoney} Tk. New Balance is: ${newBalance} Tk.</h1>
         </div>
         `;

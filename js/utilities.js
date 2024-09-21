@@ -17,7 +17,7 @@ function showSectionById(id){
     document.getElementById('cash-out-form').classList.add('hidden');
     document.getElementById('transfer-money-form').classList.add('hidden');
     document.getElementById('get-bonus-form').classList.add('hidden');
-    // document.getElementById('').classList.add('hidden');
+    document.getElementById('pay-bill-form').classList.add('hidden');
     document.getElementById('transaction-form').classList.add('hidden');
 
     // show the section with the provided id as parameter
